@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<body>
+
+ <header class="header clearfix">
+     <navbar class="Menu">
+          <a class="menu-item">Clube de Fotografia</a> 
+          <a class="menu-item"  style="text-decoration: none;" target="_self" href="index.html">Sobre mim</a>
+     </navbar>
+ </header>
+  <!-- TODO 1: cabeçalho da página (header) com o nome do clube e um nav
+       com uma ligação para a tua página «Sobre mim» da Semana 1. -->
+
+  <main>
+     <h1>Inscrição</h1>
+    <!-- TODO 2: um h1 «Inscrição» e um parágrafo que diga que os campos
+         obrigatórios estão assinalados com «(obrigatório)». -->
+
+    <form action="#" method="post" >
+     <label for="Nome">Nome:</label><br>
+     <input type="text" id="Nome" required placeholder="Obrigatório" autocomplete="name"><br>
+     <label for="Email">Email:</label><br>
+     <input type="email" id="Email" required autocomplete="email" placeholder="Obrigatório"><br>
+     <label for="tel">Télemovel:</label><br>
+     <input type="tel" id="tel" autocomplete="tel" placeholder="Opcional"><br>
+     <label for="Curso">Curso:</label><br>
+     <select name="Curso" id="Curso" required >
+          <option value="Cuso1">Curso1</option>
+          <option value="Cuso2">Curso2</option>
+          <option value="Cuso3">Curso3</option>
+          <option value="Cuso4">Curso4</option>
+          <option disabled selected hidden>Escolhe o teu curso</option>
+     </select>
+          <fieldset>
+               <legend>Ano:</legend>
+               <label for="Ano">1º</label>
+               <input type="radio" name="Ano"><br>
+               <label for="Ano">2º</label>
+               <input type="radio" name="Ano"><br>
+               <label for="Ano">3º</label>
+               <input type="radio" name="Ano"><br>
+          </fieldset>
+          <fieldset>
+               <legend>Interesses:</legend>
+               <label for="Interesses">Retrato</label>
+               <input type="checkbox"><br>
+               <label for="Interesses">Paisagem</label>
+               <input type="checkbox"><br>
+               <label for="Interesses">Rua</label>
+               <input type="checkbox"><br>
+               <label for="Interesses">Edição</label>
+               <input type="checkbox">
+          </fieldset>
+          <label for="Motivo">Porque queres entrar no clube?</label><br>
+          <textarea name="" id="Motivo" rows="4" aria-describedby="Motivo"></textarea><br>
+          <input type="checkbox" required id="Autorizo"><label for="Autorizo">Autorizo o uso dos meus dados apenas para gerir a inscrição</label><br>
+          <input type="submit">
+    </form>
+  </main>
+  <footer>
+     <aside>
+          <strong>Clube Fotografia</strong> &nbsp;|&nbsp; <a href="#">Facebook</a> &nbsp;|&nbsp; <a href="#">Instagram</a>
+          <p>&copy; 2026 Clube Fotografia. Todos os direitos reservados.</p>
+     </aside>
+  </footer>
+</body>
